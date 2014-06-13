@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+
+<!--[if IEMobile 7]><html class="no-js iem7 oldie"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if (IE 9)&!(IEMobile)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if (gt IE 9)|(gt IEMobile 7)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Developr</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- http://davidbcalhoun.com/2010/viewport-metatag -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+
+	<!-- http://www.kylejlarson.com/blog/2012/iphone-5-web-design/ and http://darkforge.blogspot.fr/2010/05/customize-android-browser-scaling-with.html -->
+	<meta name="viewport" content="user-scalable=0, initial-scale=1.0, target-densitydpi=115">
+
+	<!-- For all browsers -->
+	<link rel="stylesheet" href="css/reset.css?v=1">
+	<link rel="stylesheet" href="css/style.css?v=1">
+	<link rel="stylesheet" href="css/colors.css?v=1">
+	<link rel="stylesheet" media="print" href="css/print.css?v=1">
+	<!-- For progressively larger displays -->
+	<link rel="stylesheet" media="only all and (min-width: 480px)" href="css/480.css?v=1">
+	<link rel="stylesheet" media="only all and (min-width: 768px)" href="css/768.css?v=1">
+	<link rel="stylesheet" media="only all and (min-width: 992px)" href="css/992.css?v=1">
+	<link rel="stylesheet" media="only all and (min-width: 1200px)" href="css/1200.css?v=1">
+	<!-- For Retina displays -->
+	<link rel="stylesheet" media="only all and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)" href="css/2x.css?v=1">
+
+	<!-- Webfonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+	<!-- Additional styles -->
+	<link rel="stylesheet" href="css/styles/switches.css?v=1">
+
+	<!-- JavaScript at bottom except for Modernizr -->
+	<script src="js/libs/modernizr.custom.js"></script>
+
+	<!-- For Modern Browsers -->
+	<link rel="shortcut icon" href="img/favicons/favicon.png">
+	<!-- For everything else -->
+	<link rel="shortcut icon" href="img/favicons/favicon.ico">
+
+	<!-- iOS web-app metas -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!-- iPhone ICON -->
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="57x57">
+	<!-- iPad ICON -->
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-ipad.png" sizes="72x72">
+	<!-- iPhone (Retina) ICON -->
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-retina.png" sizes="114x114">
+	<!-- iPad (Retina) ICON -->
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-ipad-retina.png" sizes="144x144">
+
+	<!-- iPhone SPLASHSCREEN (320x460) -->
+	<link rel="apple-touch-startup-image" href="img/splash/iphone.png" media="(device-width: 320px)">
+	<!-- iPhone (Retina) SPLASHSCREEN (640x960) -->
+	<link rel="apple-touch-startup-image" href="img/splash/iphone-retina.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)">
+	<!-- iPhone 5 SPLASHSCREEN (640×1096) -->
+	<link rel="apple-touch-startup-image" href="img/splash/iphone5.png" media="(device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+	<!-- iPad (portrait) SPLASHSCREEN (748x1024) -->
+	<link rel="apple-touch-startup-image" href="img/splash/ipad-portrait.png" media="(device-width: 768px) and (orientation: portrait)">
+	<!-- iPad (landscape) SPLASHSCREEN (768x1004) -->
+	<link rel="apple-touch-startup-image" href="img/splash/ipad-landscape.png" media="(device-width: 768px) and (orientation: landscape)">
+	<!-- iPad (Retina, portrait) SPLASHSCREEN (2048x1496) -->
+	<link rel="apple-touch-startup-image" href="img/splash/ipad-portrait-retina.png" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)">
+	<!-- iPad (Retina, landscape) SPLASHSCREEN (1536x2008) -->
+	<link rel="apple-touch-startup-image" href="img/splash/ipad-landscape-retina.png" media="(device-width: 1536px)  and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)">
+
+	<!-- Microsoft clear type rendering -->
+	<meta http-equiv="cleartype" content="on">
+</head>
+
+<body class="clearfix with-menu with-shortcuts">
+
+	<!-- Prompt IE 6 users to install Chrome Frame -->
+	<!--[if lt IE 7]><p class="message red-gradient simpler">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+	<!-- Title bar -->
+	<header role="banner" id="title-bar">
+		<h2>Developr</h2>
+	</header>
+
+	<!-- Button to open/hide menu -->
+	<a href="#" id="open-menu"><span>Menu</span></a>
+
+	<!-- Button to open/hide shortcuts -->
+	<a href="#" id="open-shortcuts"><span class="icon-thumbs"></span></a>
+
+	<!-- Main content -->
+	<section role="main" id="main">
+
+		<noscript class="message black-gradient simpler">Your browser does not support JavaScript! Some features won't work as expected...</noscript>
+
+		<hgroup id="main-title" class="thin">
+			<h1>Icons</h1>
+		</hgroup>
+
+		<div class="with-padding">
+
+			<p>The template includes a complete icon set from the awesome icon font <a href="http://www.entypo.com/">Entypo</a>, with <strong>284</strong> available symbols:</p>
+
+			<ul class="blocks-list square-46 children-tooltip" data-tooltip-options='{"classes":["anthracite-gradient","big-text","with-padding"]}'>
+				<li class="icon-phone icon-size2" title="icon-phone"></li>
+				<li class="icon-mobile icon-size2" title="icon-mobile"></li>
+				<li class="icon-tag icon-size2" title="icon-tag"></li>
+				<li class="icon-directions icon-size2" title="icon-directions"></li>
+				<li class="icon-mail icon-size2" title="icon-mail"></li>
+				<li class="icon-paper-plane icon-size2" title="icon-paper-plane"></li>
+				<li class="icon-pencil icon-size2" title="icon-pencil"></li>
+				<li class="icon-feather icon-size2" title="icon-feather"></li>
+				<li class="icon-paperclip icon-size2" title="icon-paperclip"></li>
+				<li class="icon-mailbox icon-size2" title="icon-mailbox"></li>
+				<li class="icon-reply icon-size2" title="icon-reply"></li>
+				<li class="icon-reply-all icon-size2" title="icon-reply-all"></li>
+				<li class="icon-fwd icon-size2" title="icon-fwd"></li>
+				<li class="icon-user icon-size2" title="icon-user"></li>
+				<li class="icon-users icon-size2" title="icon-users"></li>
+				<li class="icon-add-user icon-size2" title="icon-add-user"></li>
+				<li class="icon-card icon-size2" title="icon-card"></li>
+				<li class="icon-extract icon-size2" title="icon-extract"></li>
+				<li class="icon-marker icon-size2" title="icon-marker"></li>
+				<li class="icon-map icon-size2" title="icon-map"></li>
+				<li class="icon-compass icon-size2" title="icon-compass"></li>
+				<li class="icon-arrow icon-size2" title="icon-arrow"></li>
+				<li class="icon-target icon-size2" title="icon-target"></li>
+				<li class="icon-path icon-size2" title="icon-path"></li>
+				<li class="icon-shareable icon-size2" title="icon-shareable"></li>
+				<li class="icon-heart icon-size2" title="icon-heart"></li>
+				<li class="icon-heart-empty icon-size2" title="icon-heart-empty"></li>
+				<li class="icon-star icon-size2" title="icon-star"></li>
+				<li class="icon-star-empty icon-size2" title="icon-star-empty"></li>
+				<li class="icon-like icon-size2" title="icon-like"></li>
+				<li class="icon-unlike icon-size2" title="icon-unlike"></li>
+				<li class="icon-chat icon-size2" title="icon-chat"></li>
+				<li class="icon-speech icon-size2" title="icon-speech"></li>
+				<li class="icon-quote icon-size2" title="icon-quote"></li>
+				<li class="icon-home icon-size2" title="icon-home"></li>
+				<li class="icon-new-tab icon-size2" title="icon-new-tab"></li>
+				<li class="icon-search icon-size2" title="icon-search"></li>
+				<li class="icon-flashlight icon-size2" title="icon-flashlight"></li>
+				<li class="icon-printer icon-size2" title="icon-printer"></li>
+				<li class="icon-bell icon-size2" title="icon-bell"></li>
+				<li class="icon-link icon-size2" title="icon-link"></li>
+				<li class="icon-flag icon-size2" title="icon-flag"></li>
+				<li class="icon-gear icon-size2" title="icon-gear"></li>
+				<li class="icon-tools icon-size2" title="icon-tools"></li>
+				<li class="icon-trophy icon-size2" title="icon-trophy"></li>
+				<li class="icon-price-tag icon-size2" title="icon-price-tag"></li>
+				<li class="icon-camera icon-size2" title="icon-camera"></li>
+				<li class="icon-megaphone icon-size2" title="icon-megaphone"></li>
+				<li class="icon-moon icon-size2" title="icon-moon"></li>
+				<li class="icon-palette icon-size2" title="icon-palette"></li>
+				<li class="icon-leaf icon-size2" title="icon-leaf"></li>
+				<li class="icon-music-note icon-size2" title="icon-music-note"></li>
+				<li class="icon-beamed-note icon-size2" title="icon-beamed-note"></li>
+				<li class="icon-new icon-size2" title="icon-new"></li>
+				<li class="icon-graduation-cap icon-size2" title="icon-graduation-cap"></li>
+				<li class="icon-book icon-size2" title="icon-book"></li>
+				<li class="icon-newspaper icon-size2" title="icon-newspaper"></li>
+				<li class="icon-bag icon-size2" title="icon-bag"></li>
+				<li class="icon-plane icon-size2" title="icon-plane"></li>
+				<li class="icon-buoy icon-size2" title="icon-buoy"></li>
+				<li class="icon-eye icon-size2" title="icon-eye"></li>
+				<li class="icon-clock icon-size2" title="icon-clock"></li>
+				<li class="icon-mic icon-size2" title="icon-mic"></li>
+				<li class="icon-calendar icon-size2" title="icon-calendar"></li>
+				<li class="icon-lightning icon-size2" title="icon-lightning"></li>
+				<li class="icon-thunder-cloud icon-size2" title="icon-thunder-cloud"></li>
+				<li class="icon-droplet icon-size2" title="icon-droplet"></li>
+				<li class="icon-cd icon-size2" title="icon-cd"></li>
+				<li class="icon-briefcase icon-size2" title="icon-briefcase"></li>
+				<li class="icon-air icon-size2" title="icon-air"></li>
+				<li class="icon-hourglass icon-size2" title="icon-hourglass"></li>
+				<li class="icon-gauge icon-size2" title="icon-gauge"></li>
+				<li class="icon-language icon-size2" title="icon-language"></li>
+				<li class="icon-network icon-size2" title="icon-network"></li>
+				<li class="icon-key icon-size2" title="icon-key"></li>
+				<li class="icon-battery icon-size2" title="icon-battery"></li>
+				<li class="icon-bucket icon-size2" title="icon-bucket"></li>
+				<li class="icon-magnet icon-size2" title="icon-magnet"></li>
+				<li class="icon-drive icon-size2" title="icon-drive"></li>
+				<li class="icon-cup icon-size2" title="icon-cup"></li>
+				<li class="icon-rocket icon-size2" title="icon-rocket"></li>
+				<li class="icon-brush icon-size2" title="icon-brush"></li>
+				<li class="icon-suitcase icon-size2" title="icon-suitcase"></li>
+				<li class="icon-traffic-cone icon-size2" title="icon-traffic-cone"></li>
+				<li class="icon-globe icon-size2" title="icon-globe"></li>
+				<li class="icon-keyboard icon-size2" title="icon-keyboard"></li>
+				<li class="icon-browser icon-size2" title="icon-browser"></li>
+				<li class="icon-publish icon-size2" title="icon-publish"></li>
+				<li class="icon-progress-3 icon-size2" title="icon-progress-3"></li>
+				<li class="icon-progress-2 icon-size2" title="icon-progress-2"></li>
+				<li class="icon-progress-1 icon-size2" title="icon-progress-1"></li>
+				<li class="icon-progress-0 icon-size2" title="icon-progress-0"></li>
+				<li class="icon-light-down icon-size2" title="icon-light-down"></li>
+				<li class="icon-light-up icon-size2" title="icon-light-up"></li>
+				<li class="icon-adjust icon-size2" title="icon-adjust"></li>
+				<li class="icon-code icon-size2" title="icon-code"></li>
+				<li class="icon-monitor icon-size2" title="icon-monitor"></li>
+				<li class="icon-infinity icon-size2" title="icon-infinity"></li>
+				<li class="icon-light-bulb icon-size2" title="icon-light-bulb"></li>
+				<li class="icon-credit-card icon-size2" title="icon-credit-card"></li>
+				<li class="icon-database icon-size2" title="icon-database"></li>
+				<li class="icon-voicemail icon-size2" title="icon-voicemail"></li>
+				<li class="icon-clipboard icon-size2" title="icon-clipboard"></li>
+				<li class="icon-cart icon-size2" title="icon-cart"></li>
+				<li class="icon-box icon-size2" title="icon-box"></li>
+				<li class="icon-ticket icon-size2" title="icon-ticket"></li>
+				<li class="icon-rss icon-size2" title="icon-rss"></li>
+				<li class="icon-wifi icon-size2" title="icon-wifi"></li>
+				<li class="icon-thermometer icon-size2" title="icon-thermometer"></li>
+				<li class="icon-water icon-size2" title="icon-water"></li>
+				<li class="icon-line-graph icon-size2" title="icon-line-graph"></li>
+				<li class="icon-pie-chart icon-size2" title="icon-pie-chart"></li>
+				<li class="icon-bar-graph icon-size2" title="icon-bar-graph"></li>
+				<li class="icon-area-graph icon-size2" title="icon-area-graph"></li>
+				<li class="icon-lock icon-size2" title="icon-lock"></li>
+				<li class="icon-unlock icon-size2" title="icon-unlock"></li>
+				<li class="icon-logout icon-size2" title="icon-logout"></li>
+				<li class="icon-login icon-size2" title="icon-login"></li>
+				<li class="icon-tick icon-size2" title="icon-tick"></li>
+				<li class="icon-cross icon-size2" title="icon-cross"></li>
+				<li class="icon-squared-minus icon-size2" title="icon-squared-minus"></li>
+				<li class="icon-squared-plus icon-size2" title="icon-squared-plus"></li>
+				<li class="icon-squared-cross icon-size2" title="icon-squared-cross"></li>
+				<li class="icon-minus-round icon-size2" title="icon-minus-round"></li>
+				<li class="icon-plus-round icon-size2" title="icon-plus-round"></li>
+				<li class="icon-cross-round icon-size2" title="icon-cross-round"></li>
+				<li class="icon-minus icon-size2" title="icon-minus"></li>
+				<li class="icon-plus icon-size2" title="icon-plus"></li>
+				<li class="icon-erase icon-size2" title="icon-erase"></li>
+				<li class="icon-forbidden icon-size2" title="icon-forbidden"></li>
+				<li class="icon-info icon-size2" title="icon-info"></li>
+				<li class="icon-info-round icon-size2" title="icon-info-round"></li>
+				<li class="icon-question icon-size2" title="icon-question"></li>
+				<li class="icon-question-round icon-size2" title="icon-question-round"></li>
+				<li class="icon-warning icon-size2" title="icon-warning"></li>
+				<li class="icon-cycle icon-size2" title="icon-cycle"></li>
+				<li class="icon-redo icon-size2" title="icon-redo"></li>
+				<li class="icon-undo icon-size2" title="icon-undo"></li>
+				<li class="icon-swap icon-size2" title="icon-swap"></li>
+				<li class="icon-revert icon-size2" title="icon-revert"></li>
+				<li class="icon-level-down icon-size2" title="icon-level-down"></li>
+				<li class="icon-refresh icon-size2" title="icon-refresh"></li>
+				<li class="icon-loop icon-size2" title="icon-loop"></li>
+				<li class="icon-back-in-time icon-size2" title="icon-back-in-time"></li>
+				<li class="icon-level-up icon-size2" title="icon-level-up"></li>
+				<li class="icon-switch icon-size2" title="icon-switch"></li>
+				<li class="icon-numbered-list icon-size2" title="icon-numbered-list"></li>
+				<li class="icon-list-add icon-size2" title="icon-list-add"></li>
+				<li class="icon-thumbs icon-size2" title="icon-thumbs"></li>
+				<li class="icon-bullet-list icon-size2" title="icon-bullet-list"></li>
+				<li class="icon-list icon-size2" title="icon-list"></li>
+				<li class="icon-page-list icon-size2" title="icon-page-list"></li>
+				<li class="icon-page-list-inverted icon-size2" title="icon-page-list-inverted"></li>
+				<li class="icon-page icon-size2" title="icon-page"></li>
+				<li class="icon-pages icon-size2" title="icon-pages"></li>
+				<li class="icon-frame icon-size2" title="icon-frame"></li>
+				<li class="icon-pictures icon-size2" title="icon-pictures"></li>
+				<li class="icon-movie icon-size2" title="icon-movie"></li>
+				<li class="icon-music icon-size2" title="icon-music"></li>
+				<li class="icon-folder icon-size2" title="icon-folder"></li>
+				<li class="icon-drawer icon-size2" title="icon-drawer"></li>
+				<li class="icon-trash icon-size2" title="icon-trash"></li>
+				<li class="icon-outbox icon-size2" title="icon-outbox"></li>
+				<li class="icon-inbox icon-size2" title="icon-inbox"></li>
+				<li class="icon-save icon-size2" title="icon-save"></li>
+				<li class="icon-download icon-size2" title="icon-download"></li>
+				<li class="icon-cloud icon-size2" title="icon-cloud"></li>
+				<li class="icon-cloud-upload icon-size2" title="icon-cloud-upload"></li>
+				<li class="icon-ribbon icon-size2" title="icon-ribbon"></li>
+				<li class="icon-ribbons icon-size2" title="icon-ribbons"></li>
+				<li class="icon-read icon-size2" title="icon-read"></li>
+				<li class="icon-play icon-size2" title="icon-play"></li>
+				<li class="icon-pause icon-size2" title="icon-pause"></li>
+				<li class="icon-record icon-size2" title="icon-record"></li>
+				<li class="icon-stop icon-size2" title="icon-stop"></li>
+				<li class="icon-forward icon-size2" title="icon-forward"></li>
+				<li class="icon-backward icon-size2" title="icon-backward"></li>
+				<li class="icon-previous icon-size2" title="icon-previous"></li>
+				<li class="icon-next icon-size2" title="icon-next"></li>
+				<li class="icon-expand icon-size2" title="icon-expand"></li>
+				<li class="icon-reduce icon-size2" title="icon-reduce"></li>
+				<li class="icon-volume icon-size2" title="icon-volume"></li>
+				<li class="icon-loud icon-size2" title="icon-loud"></li>
+				<li class="icon-mute icon-size2" title="icon-mute"></li>
+				<li class="icon-flow-cascade icon-size2" title="icon-flow-cascade"></li>
+				<li class="icon-flow-branch icon-size2" title="icon-flow-branch"></li>
+				<li class="icon-flow-tree icon-size2" title="icon-flow-tree"></li>
+				<li class="icon-flow-line icon-size2" title="icon-flow-line"></li>
+				<li class="icon-flow-parallel icon-size2" title="icon-flow-parallel"></li>
+				<li class="icon-left-fat icon-size2" title="icon-left-fat"></li>
+				<li class="icon-down-fat icon-size2" title="icon-down-fat"></li>
+				<li class="icon-up-fat icon-size2" title="icon-up-fat"></li>
+				<li class="icon-right-fat icon-size2" title="icon-right-fat"></li>
+				<li class="icon-left icon-size2" title="icon-left"></li>
+				<li class="icon-down icon-size2" title="icon-down"></li>
+				<li class="icon-up icon-size2" title="icon-up"></li>
+				<li class="icon-right icon-size2" title="icon-right"></li>
+				<li class="icon-left-round icon-size2" title="icon-left-round"></li>
+				<li class="icon-down-round icon-size2" title="icon-down-round"></li>
+				<li class="icon-up-round icon-size2" title="icon-up-round"></li>
+				<li class="icon-right-round icon-size2" title="icon-right-round"></li>
+				<li class="icon-triangle-left icon-size2" title="icon-triangle-left"></li>
+				<li class="icon-triangle-down icon-size2" title="icon-triangle-down"></li>
+				<li class="icon-triangle-up icon-size2" title="icon-triangle-up"></li>
+				<li class="icon-triangle-right icon-size2" title="icon-triangle-right"></li>
+				<li class="icon-chevron-left icon-size2" title="icon-chevron-left"></li>
+				<li class="icon-chevron-down icon-size2" title="icon-chevron-down"></li>
+				<li class="icon-chevron-up icon-size2" title="icon-chevron-up"></li>
+				<li class="icon-chevron-right icon-size2" title="icon-chevron-right"></li>
+				<li class="icon-chevron-small-left icon-size2" title="icon-chevron-small-left"></li>
+				<li class="icon-chevron-small-down icon-size2" title="icon-chevron-small-down"></li>
+				<li class="icon-chevron-small-up icon-size2" title="icon-chevron-small-up"></li>
+				<li class="icon-chevron-small-right icon-size2" title="icon-chevron-small-right"></li>
+				<li class="icon-chevron-thin-left icon-size2" title="icon-chevron-thin-left"></li>
+				<li class="icon-chevron-thin-down icon-size2" title="icon-chevron-thin-down"></li>
+				<li class="icon-chevron-thin-up icon-size2" title="icon-chevron-thin-up"></li>
+				<li class="icon-chevron-thin-right icon-size2" title="icon-chevron-thin-right"></li>
+				<li class="icon-left-thin icon-size2" title="icon-left-thin"></li>
+				<li class="icon-down-thin icon-size2" title="icon-down-thin"></li>
+				<li class="icon-up-thin icon-size2" title="icon-up-thin"></li>
+				<li class="icon-right-thin icon-size2" title="icon-right-thin"></li>
+				<li class="icon-arrow-combo icon-size2" title="icon-arrow-combo"></li>
+				<li class="icon-ellipsis icon-size2" title="icon-ellipsis"></li>
+				<li class="icon-two-dots icon-size2" title="icon-two-dots"></li>
+				<li class="icon-dot icon-size2" title="icon-dot"></li>
+				<li class="icon-creative-commons icon-size2" title="icon-creative-commons"></li>
+				<li class="icon-cc-by icon-size2" title="icon-cc-by"></li>
+				<li class="icon-cc-nc icon-size2" title="icon-cc-nc"></li>
+				<li class="icon-cc-nc-eu icon-size2" title="icon-cc-nc-eu"></li>
+				<li class="icon-cc-nc-jp icon-size2" title="icon-cc-nc-jp"></li>
+				<li class="icon-cc-sa icon-size2" title="icon-cc-sa"></li>
+				<li class="icon-cc-nd icon-size2" title="icon-cc-nd"></li>
+				<li class="icon-cc-pd icon-size2" title="icon-cc-pd"></li>
+				<li class="icon-cc-zero icon-size2" title="icon-cc-zero"></li>
+				<li class="icon-cc-share icon-size2" title="icon-cc-share"></li>
+				<li class="icon-cc-remix icon-size2" title="icon-cc-remix"></li>
+				<li class="icon-db-logo icon-size2" title="icon-db-logo"></li>
+				<li class="icon-db-shape icon-size2" title="icon-db-shape"></li>
+				<li class="icon-github icon-size2" title="icon-github"></li>
+				<li class="icon-github-circled icon-size2" title="icon-github-circled"></li>
+				<li class="icon-flickr icon-size2" title="icon-flickr"></li>
+				<li class="icon-flickr-circled icon-size2" title="icon-flickr-circled"></li>
+				<li class="icon-vimeo icon-size2" title="icon-vimeo"></li>
+				<li class="icon-vimeo-circled icon-size2" title="icon-vimeo-circled"></li>
+				<li class="icon-twitter icon-size2" title="icon-twitter"></li>
+				<li class="icon-twitter-circled icon-size2" title="icon-twitter-circled"></li>
+				<li class="icon-facebook icon-size2" title="icon-facebook"></li>
+				<li class="icon-facebook-circled icon-size2" title="icon-facebook-circled"></li>
+				<li class="icon-facebook-squared icon-size2" title="icon-facebook-squared"></li>
+				<li class="icon-gplus icon-size2" title="icon-gplus"></li>
+				<li class="icon-gplus-circled icon-size2" title="icon-gplus-circled"></li>
+				<li class="icon-pinterest icon-size2" title="icon-pinterest"></li>
+				<li class="icon-pinterest-circled icon-size2" title="icon-pinterest-circled"></li>
+				<li class="icon-tumblr icon-size2" title="icon-tumblr"></li>
+				<li class="icon-tumblr-circled icon-size2" title="icon-tumblr-circled"></li>
+				<li class="icon-linkedin icon-size2" title="icon-linkedin"></li>
+				<li class="icon-linkedin-circled icon-size2" title="icon-linkedin-circled"></li>
+				<li class="icon-dribbble icon-size2" title="icon-dribbble"></li>
+				<li class="icon-dribbble-circled icon-size2" title="icon-dribbble-circled"></li>
+				<li class="icon-stumbleupon icon-size2" title="icon-stumbleupon"></li>
+				<li class="icon-stumbleupon-circled icon-size2" title="icon-stumbleupon-circled"></li>
+				<li class="icon-lastfm icon-size2" title="icon-lastfm"></li>
+				<li class="icon-lastfm-circled icon-size2" title="icon-lastfm-circled"></li>
+				<li class="icon-rdio icon-size2" title="icon-rdio"></li>
+				<li class="icon-rdio-circled icon-size2" title="icon-rdio-circled"></li>
+				<li class="icon-spotify icon-size2" title="icon-spotify"></li>
+				<li class="icon-spotify-circled icon-size2" title="icon-spotify-circled"></li>
+				<li class="icon-qq icon-size2" title="icon-qq"></li>
+				<li class="icon-instagram icon-size2" title="icon-instagram"></li>
+				<li class="icon-dropbox icon-size2" title="icon-dropbox"></li>
+				<li class="icon-evernote icon-size2" title="icon-evernote"></li>
+				<li class="icon-flattr icon-size2" title="icon-flattr"></li>
+				<li class="icon-skype icon-size2" title="icon-skype"></li>
+				<li class="icon-skype-circled icon-size2" title="icon-skype-circled"></li>
+				<li class="icon-renren icon-size2" title="icon-renren"></li>
+				<li class="icon-sina-weibo icon-size2" title="icon-sina-weibo"></li>
+				<li class="icon-paypal icon-size2" title="icon-paypal"></li>
+				<li class="icon-picasa icon-size2" title="icon-picasa"></li>
+				<li class="icon-soundcloud icon-size2" title="icon-soundcloud"></li>
+				<li class="icon-mixi icon-size2" title="icon-mixi"></li>
+				<li class="icon-behance icon-size2" title="icon-behance"></li>
+				<li class="icon-google-circles icon-size2" title="icon-google-circles"></li>
+				<li class="icon-vkontakte icon-size2" title="icon-vkontakte"></li>
+				<li class="icon-smashing icon-size2" title="icon-smashing"></li>
+			</ul>
+
+			<p>Icon fonts are vectors, so they may take any desired <b>size</b> and <b>color</b>, are <b>resolution-independant</b> and can even receive a <b>drop-shadow</b>:</p>
+
+			<ul class="blocks-list square-90">
+				<li><span class="icon-user" title="user"></span></li>
+				<li><span class="icon-user icon-size2" title="user"></span></li>
+				<li><span class="icon-user icon-size3 green"></span></li>
+				<li><span class="icon-user icon-size4 silver" style="-webkit-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75), 0 -1px 0 rgba(0, 0, 0, 0.35); -moz-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75), 0 -1px 0 rgba(0, 0, 0, 0.35); text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75), 0 -1px 0 rgba(0, 0, 0, 0.35)"></span></li>
+				<li><span class="icon-user icon-size5 black large-text-shadow"></span></li>
+			</ul>
+		</div>
+
+	</section>
+	<!-- End main content -->
+
+	<!-- Side tabs shortcuts -->
+	<ul id="shortcuts" role="complementary" class="children-tooltip tooltip-right">
+		<li class="current"><a href="./" class="shortcut-dashboard" title="Dashboard">Dashboard</a></li>
+		<li><a href="inbox.html" class="shortcut-messages" title="Messages">Messages</a></li>
+		<li><a href="agenda.html" class="shortcut-agenda" title="Agenda">Agenda</a></li>
+		<li><a href="tables.html" class="shortcut-contacts" title="Contacts">Contacts</a></li>
+		<li><a href="explorer.html" class="shortcut-medias" title="Medias">Medias</a></li>
+		<li><a href="sliders.html" class="shortcut-stats" title="Stats">Stats</a></li>
+		<li><a href="form.html" class="shortcut-settings" title="Settings">Settings</a></li>
+		<li><span class="shortcut-notes" title="Notes">Notes</span></li>
+	</ul>
+
+	<!-- Sidebar/drop-down menu -->
+	<section id="menu" role="complementary">
+
+		<!-- This wrapper is used by several responsive layouts -->
+		<div id="menu-content">
+
+			<header>
+				Administrator
+			</header>
+
+			<div id="profile">
+				<img src="img/user.png" width="64" height="64" alt="User name" class="user-icon">
+				Hello
+				<span class="name">John <b>Doe</b></span>
+			</div>
+
+			<!-- By default, this section is made for 4 icons, see the doc to learn how to change this, in "basic markup explained" -->
+			<ul id="access" class="children-tooltip">
+				<li><a href="inbox.html" title="Messages"><span class="icon-inbox"></span><span class="count">2</span></a></li>
+				<li><a href="calendars.html" title="Calendar"><span class="icon-calendar"></span></a></li>
+				<li><a href="login.html" title="Profile"><span class="icon-user"></span></a></li>
+				<li class="disabled"><span class="icon-gear"></span></li>
+			</ul>
+
+			<section class="navigable">
+				<ul class="big-menu">
+					<li class="with-right-arrow">
+						<span><span class="list-count">11</span>Main styles</span>
+						<ul class="big-menu">
+							<li><a href="typography.html">Typography</a></li>
+							<li><a href="columns.html">Columns</a></li>
+							<li><a href="tables.html">Tables</a></li>
+							<li><a href="colors.html">Colors &amp; backgrounds</a></li>
+							<li><a href="icons.html" class="current navigable-current">Icons</a></li>
+							<li><a href="files.html">Files &amp; Gallery</a></li>
+							<li class="with-right-arrow">
+								<span><span class="list-count">4</span>Forms &amp; buttons</span>
+								<ul class="big-menu">
+									<li><a href="buttons.html">Buttons</a></li>
+									<li><a href="form.html">Form elements</a></li>
+									<li><a href="textareas.html">Textareas &amp; WYSIWYG</a></li>
+									<li><a href="form-layouts.html">Form layouts</a></li>
+									<li><a href="wizard.html">Wizard</a></li>
+								</ul>
+							</li>
+							<li class="with-right-arrow">
+								<span><span class="list-count">2</span>Agenda &amp; Calendars</span>
+								<ul class="big-menu">
+									<li><a href="agenda.html">Agenda</a></li>
+									<li><a href="calendars.html">Calendars</a></li>
+								</ul>
+							</li>
+							<li><a href="blocks.html">Blocks &amp; infos</a></li>
+						</ul>
+					</li>
+					<li class="with-right-arrow">
+						<span><span class="list-count">8</span>Main features</span>
+						<ul class="big-menu">
+							<li><a href="auto-setup.html">Automatic setup</a></li>
+							<li><a href="responsive.html">Responsiveness</a></li>
+							<li><a href="tabs.html">Tabs</a></li>
+							<li><a href="sliders.html">Slider &amp; progress</a></li>
+							<li><a href="modals.html">Modal windows</a></li>
+							<li class="with-right-arrow">
+								<span><span class="list-count">3</span>Messages &amp; notifications</span>
+								<ul class="big-menu">
+									<li><a href="messages.html">Messages</a></li>
+									<li><a href="notifications.html">Notifications</a></li>
+									<li><a href="tooltips.html">Tooltips</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="with-right-arrow">
+						<a href="ajax-demo/submenu.html" class="navigable-ajax" title="Menu title">With ajax sub-menu</a>
+					</li>
+				</ul>
+			</section>
+
+			<ul class="unstyled-list">
+				<li class="title-menu">Today's event</li>
+				<li>
+					<ul class="calendar-menu">
+						<li>
+							<a href="#" title="See event">
+								<time datetime="2011-02-24"><b>24</b> Feb</time>
+								<small class="green">10:30</small>
+								Event's description
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="title-menu">New messages</li>
+				<li>
+					<ul class="message-menu">
+						<li>
+							<span class="message-status">
+								<a href="#" class="starred" title="Starred">Starred</a>
+								<a href="#" class="new-message" title="Mark as read">New</a>
+							</span>
+							<span class="message-info">
+								<span class="blue">17:12</span>
+								<a href="#" class="attach" title="Download attachment">Attachment</a>
+							</span>
+							<a href="#" title="Read message">
+								<strong class="blue">John Doe</strong><br>
+								<strong>Mail subject</strong>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="Read message">
+								<span class="message-status">
+									<span class="unstarred">Not starred</span>
+									<span class="new-message">New</span>
+								</span>
+								<span class="message-info">
+									<span class="blue">15:47</span>
+								</span>
+								<strong class="blue">May Starck</strong><br>
+								<strong>Mail subject a bit longer</strong>
+							</a>
+						</li>
+						<li>
+							<span class="message-status">
+								<span class="unstarred">Not starred</span>
+							</span>
+							<span class="message-info">
+								<span class="blue">15:12</span>
+							</span>
+							<strong class="blue">May Starck</strong><br>
+							Read message
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+		<!-- End content wrapper -->
+
+		<!-- This is optional -->
+		<footer id="menu-footer">
+			<p class="button-height">
+				<input type="checkbox" name="auto-refresh" id="auto-refresh" checked="checked" class="switch float-right">
+				<label for="auto-refresh">Auto-refresh</label>
+			</p>
+		</footer>
+
+	</section>
+	<!-- End sidebar/drop-down menu -->
+
+	<!-- JavaScript at the bottom for fast page loading -->
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-1.10.2.min.js"></script>
+	<script src="js/setup.js"></script>
+
+	<!-- Template functions -->
+	<script src="js/developr.input.js"></script>
+	<script src="js/developr.navigable.js"></script>
+	<script src="js/developr.notify.js"></script>
+	<script src="js/developr.scroll.js"></script>
+	<script src="js/developr.tooltip.js"></script>
+
+	<script>
+
+		// Call template init (optional, but faster if called manually)
+		$.template.init();
+
+	</script>
+</body>
+</html>

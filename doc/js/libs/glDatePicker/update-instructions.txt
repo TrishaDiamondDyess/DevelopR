@@ -1,0 +1,10 @@
+The package includes 2 stylesheets:
+
+- developr.css: fluid size calendar (new default behavior for the plugin)
+- developr.fixed.css: fixed size calendar, same as old version
+
+The new fluid design may not fit in every project, hence the two stylesheets. But you can mix both sizes too: include developr.css (so datepickers will be fluid by default), and initialize the plugin like this for datepickers which require a fixed size:
+
+$('input').glDatePicker({
+    cssName: 'default fixed'
+});
